@@ -6,7 +6,7 @@ from flask import request
 app = Flask(__name__)
 
 
-@app.route("/ping/<username>", methods=['GET'])
+@app.route("/pinging/<username>", methods=['GET'])
 def ping(username):
     return  f"Hi ,{username}. Welcome to Loan approval predictor!" 
 
