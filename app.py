@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/ping/<username>", methods=['GET'])
 def ping(username):
-    return  f"Hi ,{username}. Welcome to Loan approval predictor!" 
+    return  f"Hi ,{username}. Welcome to MLOps!" 
 
 model_pickle = open("./mlops_demo/artefacts/classifier.pkl", "rb")
 model = pickle.load(model_pickle)
